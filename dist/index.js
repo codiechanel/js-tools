@@ -1,9 +1,6 @@
 "use strict";
+// export {sayHello, sayGoodbye} from './hello'
+// import fetcher from './fetcher'
 Object.defineProperty(exports, "__esModule", { value: true });
-var hello_1 = require("./hello");
-exports.sayHello = hello_1.sayHello;
-exports.sayGoodbye = hello_1.sayGoodbye;
-// export * from './fetcher'
-const fetcher_1 = require("./fetcher");
-exports.default = fetcher_1.default;
-//# sourceMappingURL=index.js.map
+const utils_1 = require("./utils");
+exports.Util = utils_1.Util;

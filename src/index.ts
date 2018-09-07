@@ -1,5 +1,6 @@
-export {sayHello, sayGoodbye} from './hello'
-// export * from './fetcher'
-import fetcher from './fetcher'
+// export {sayHello, sayGoodbye} from './hello'
+// import fetcher from './fetcher'
 
-export default fetcher
+import { Util } from './utils'
+
+export { Util }
