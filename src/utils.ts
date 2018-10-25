@@ -3,7 +3,23 @@ export class Util {
         console.log('constructor util')
     }
     static sayGoodbye() {
-        console.log('goodbye')
+        console.log('success is the best')
+    }
+
+    /**
+     * Escaping user input that is to be treated as a literal string within a regular expression
+     * —that would otherwise be mistaken for a special character—can be accomplished by
+     * simple replacement:
+     * https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Regular_Expressions
+     * @param string
+     */
+    static escapeRegExp(string) {
+        return string.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+        // $& means the whole matched string
+    }
+
+    static flatten(source) {
+        return source.reduce( (a:any, b) => a.concat(b), [])
     }
 
     static extractHostname(url) {
